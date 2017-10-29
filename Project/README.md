@@ -6,6 +6,7 @@ We are interested in analysing the spreading of a new "trend" for example being 
 
 # Research questions
 ## A list of research questions you would like to address during the project.
+-Is Gluten free a trend or was it always there?
 -Are new ideas always coming from the same place?
 -Did the internet and the digitalisation increased the rapidity of propagation of ideas?
 
