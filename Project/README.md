@@ -8,22 +8,22 @@ Secondly, we would like to see if new problem have appeared and other disappeare
 
 Story:
 
-Health is a key factor that follows us along through life. Through the different era of mankind, the perception of health has evolved and reached very precise subject on how we behave instead of simply curing our disease,
- but still remains the priority. And with the evolution of technologies and the expansion of the knowledge through the internet, people became much more concerned. With it new theories, lobbies and trends, appeared in society, changing definitively the way of life of people and the link with health. We will by analysing web news of different countries try to perceive the changes of the meaning of the word "health" and try to identify which are the key factor related to those changes.
+Health is a key factor that follows us along through life. Through the different era of mankind, the perception of health has evolved and reached very precise subject on how we should behave to avoid diseases instead of simply curing them. Furthermore with the evolution of technologies and the expansion of the knowledge through the internet, people became much more concerned. In consequences, new theories, lobbies and trends, appeared in society, changing definitively the way of life and the link with health. We will by analysing web news of different countries try to perceive the changes of the meaning of the word "health" and try to identify which are the key factor related to those changes.
 
-Motivation:
+Our motivations are to be able to predict the impact of health-related "problems" in a country and its propagation in another country (related to question 1), and to be able to realise how our perception of healthy has evolved? (In an extreme example, if a country passes from developing to developed should it stop using gluten cause all of a sudden it will be a capital health matter?)
 
-- It would be very interesting to see if some problems appeared / disappeared in some part of the world before other.
 
-- How did our perception of healthy has evolved ? (When a developing country becomes a developed country people can focus on different problems. Before the bottom of the pyramid is fullfilled it is not possible to address problems in the top of the pyramid)
+
 
 
 
 # Research questions
 ## A list of research questions you would like to address during the project.
+
+- Are some problems appearing / disappearing in some parts of the world before other?
 - What are important health issues of the 21st century?
 - Impact of different behaviour/habits on health?
-- Malnutrition, undernourishment or overconsumption of specific food could have an impact on the health issues.
+- Importance of Malnutrition, undernourishment or overconsumption of food in society?
 
 # Dataset
 ## List the dataset(s) you want to use, and some ideas on how do you expect to get, manage, process and enrich it/them. Show us you've read the docs and some examples, and you've a clear idea on what to expect. Discuss data size and format if relevant.
