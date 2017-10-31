@@ -1,5 +1,5 @@
-# Title
-Healthy Habits
+# Title: Perception of Health 
+
 
 # Abstract
 ## A 150 word description of the project idea, goals, dataset used. What story you would like to tell and why? What's the motivation behind your project?
@@ -40,8 +40,8 @@ By adding the 3 others data set we think we will have enough material to make an
 The data set are provided in 3 different ways i.e as a raw data set, words/lemma, or linear text.
 The words/lemma/Pos will allow to search for various declinaison of the word health more easily. The three corpus are available for download, we will then choose which one to use (more likely words/lemma) for a specific purpose. We will be able to directly search in that database through python.
 
--200 years of News : Information more localized but can be a strength whether our project wants to identify the questions on country scale.
--Wikipedia
+Other possible data set: 200 years of News. It could give us an other information perspective as new will be more localized but can be a strength whether our project wants to identify the questions on country scale.
+
 
 
 # A list of internal milestones up until project milestone 2
