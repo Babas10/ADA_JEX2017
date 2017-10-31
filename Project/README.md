@@ -12,9 +12,9 @@ Health is a key factor that follows us along through life. Epochs pay different 
 
 Motivation:
 
-It would be very interesting to see if some problems appeared / dissapeared in some part of the world before other.
+- It would be very interesting to see if some problems appeared / dissapeared in some part of the world before other.
 
-How did our percpetion of healthy has evolved ? (When a developing country becomes a developed country people can focus on different problems. Before the bottom of the pyramid is fullfilled it is not possible to address problems in the top of the pyramid)
+- How did our percpetion of healthy has evolved ? (When a developing country becomes a developed country people can focus on different problems. Before the bottom of the pyramid is fullfilled it is not possible to address problems in the top of the pyramid)
 
 
 
