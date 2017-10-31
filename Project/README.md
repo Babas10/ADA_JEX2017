@@ -7,10 +7,10 @@ Our goal is to extract information about healthy pattern in a dataset. More prec
 Secondly we would like to see if new problem have appeared and other dissapeared or have been solved. It would be possible to analyse this by finding sudden increase/decrease in frequency of specific terms.
 
 Story:
--
+- 
 
 Motivation:
--If would be very interesting to see if some problems appeared / dissapeared in some part of the world before other.
+-It would be very interesting to see if some problems appeared / dissapeared in some part of the world before other.
 -How did our percpetion of healthy has evolved ? (When a developing country becomes a developed country people can focus on different problems. Before the bottom of the pyramid is fullfilled it is not possible to address problems in the top of the pyramid)
 
 
@@ -19,7 +19,7 @@ Motivation:
 ## A list of research questions you would like to address during the project.
 - What are important health issues of the 21st century?
 - Impact of different behaviour/habits on health?
-- Malnutrition, undernourishment or overconsumption of specific food could hqve an impact on the health issues.
+- Malnutrition, undernourishment or overconsumption of specific food could have an impact on the health issues.
 
 # Dataset
 ## List the dataset(s) you want to use, and some ideas on how do you expect to get, manage, process and enrich it/them. Show us you've read the docs and some examples, and you've a clear idea on what to expect. Discuss data size and format if relevant.
