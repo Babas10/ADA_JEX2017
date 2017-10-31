@@ -3,7 +3,7 @@ Healthy Habits
 
 # Abstract
 ## A 150 word description of the project idea, goals, dataset used. What story you would like to tell and why? What's the motivation behind your project?
-Our goal is to extract information about healthy pattern in a dataset. More precisely we would like to found articles with health related subject, rate their importance and get more specific information. For example We could then plot a health impact in term of different  discrete "problems": fast food, gluten, etc.. by region and by period if possible. 
+Our goal is to extract information about healthy pattern in a dataset. More precisely we would like to found articles with health related subject, rate their importance and get more specific information. For example We could then plot a health impact in term of different  discrete "problems": fast food, gluten, etc.. by region and by period if possible.
 Secondly we would like to see if new problem have appeared and other dissapeared or have been solved. It would be possible to analyse this by finding sudden increase/decrease in frequency of specific terms.
 
 Story:
@@ -37,8 +37,8 @@ New on the web, contains downloadable, full-text corpus data set from ( NOW, Wik
 
 
 By adding the 3 others data set we think we will have enough material to make an analysis of the trends and its propagation. It will be possible for us to go further in the trend propagation by analysing how the health issues cross the barrier of language by including the Spanish dataset.
-The data set are provided in 3 different ways i.e as a raw data set, words/lemma, or linear text. 
-
+The data set are provided in 3 different ways i.e as a raw data set, words/lemma, or linear text.
+The words/lemma/Pos will allow to search for various declinaison of the word health more easily. The three corpus are available for download, we will then choose which one to use (more likely words/lemma) for a specific purpose. We will be able to directly search in that database through python.
 
 -200 years of News : Information more localized but can be a strength whether our project wants to identify the questions on country scale.
 -Wikipedia
@@ -48,7 +48,7 @@ The data set are provided in 3 different ways i.e as a raw data set, words/lemma
 ## Add here a sketch of your planning for the next project milestone.
 The project milestone should contain a notebook with data collection and descriptive analysis.
 
-Week #1 : 
+Week #1 :
 - Agree on the dataset and what information to extract
 - Discuss with the TA about our work plan.
 - Find function to handle text extraction (only important words, without articles words such as the, a, for ...)
@@ -68,5 +68,5 @@ Week #4
 
 # Questions for TAa
 Add here some questions you have for us, in general or project-specific.
-
-- DO YOU GUYS LOVE OUR PROJECT PROPOSAL ?
+-The wikipedia corpuse is also present on the site. Will we be allowed to use it?
+-We will need powerful tools of natural language processing to analyse the meaning of the articles. Is it doable?
