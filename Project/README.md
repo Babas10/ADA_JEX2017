@@ -26,7 +26,7 @@ Motivation:
 # Dataset
 ## List the dataset(s) you want to use, and some ideas on how do you expect to get, manage, process and enrich it/them. Show us you've read the docs and some examples, and you've a clear idea on what to expect. Discuss data size and format if relevant.
 
-News On the Web : New on the web, contains downloadable, full-text corpus data set from ( NOW, Wikipedia, COCA, COHA, GloWbE) that are in English and the Corpus del Español data set. From the English data set there are two that contains 20 English speaking countries. In order to have a quick overview of the available data, we check in the amount of time some key words "Intolerance", "Gluten", "Health" appear in 3 data sets.
+New on the web, contains downloadable, full-text corpus data set from ( NOW, Wikipedia, COCA, COHA, GloWbE) that are in English and the Corpus del Español data set. From the English data set there are two of them that contains 20 English speaking countries. In order to have a quick overview of the available data, we check how many times some key words "Intolerance", "Gluten", "Health" appear in 3 data sets.
 
 | Data Set | Countries | # Health | # Gluten | # Intolerant |
 |----------|-----------|----------|----------|--------------|
