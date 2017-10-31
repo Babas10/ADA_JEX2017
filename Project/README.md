@@ -1,20 +1,21 @@
-# Title: Perception of Health 
+# Title: Perception of Health
 
 
 # Abstract
 ## A 150 word description of the project idea, goals, dataset used. What story you would like to tell and why? What's the motivation behind your project?
-Our goal is to extract information about healthy pattern in a dataset. More precisely we would like to found articles with health related subject, rate their importance and get more specific information. For example We could then plot a health impact in term of different  discrete "problems": fast food, gluten, etc.. by region and by period if possible.
-Secondly we would like to see if new problem have appeared and other dissapeared or have been solved. It would be possible to analyse this by finding sudden increase/decrease in frequency of specific terms.
+Our goal is to extract information about healthy pattern in a dataset. More precisely we would like to find articles with health related subject, rate their importance and get more specific information. For example, we could then plot a health impact in term of different discrete "problems": fast food, gluten, etc.. by region and by period if possible.
+Secondly, we would like to see if new problem have appeared and other disappeared or have been solved. It would be possible to analyse this by finding sudden increase/decrease in frequency of specific terms.
 
 Story:
 
-Health is a key factor that follows us along through life. Epochs pay different attention to it, but still were always concerned a moment or another. Through the evolution of technologies and with the expansion of the knowledge through the internet,  people became much more concerned. With it new theories, lobbies and trends, appeared in society, changing definitively the way of life of people and the link with health. We will by analysing web news of different countries try to perceive the changes of the meaning of the word "health" and try to identify which are the key factor related to those changes.
+Health is a key factor that follows us along through life. Through the different era of mankind, the perception of health has evolved and reached very precise subject on how we behave instead of simply curing our disease,
+ but still remains the priority. And with the evolution of technologies and the expansion of the knowledge through the internet, people became much more concerned. With it new theories, lobbies and trends, appeared in society, changing definitively the way of life of people and the link with health. We will by analysing web news of different countries try to perceive the changes of the meaning of the word "health" and try to identify which are the key factor related to those changes.
 
 Motivation:
 
-- It would be very interesting to see if some problems appeared / dissapeared in some part of the world before other.
+- It would be very interesting to see if some problems appeared / disappeared in some part of the world before other.
 
-- How did our percpetion of healthy has evolved ? (When a developing country becomes a developed country people can focus on different problems. Before the bottom of the pyramid is fullfilled it is not possible to address problems in the top of the pyramid)
+- How did our perception of healthy has evolved ? (When a developing country becomes a developed country people can focus on different problems. Before the bottom of the pyramid is fullfilled it is not possible to address problems in the top of the pyramid)
 
 
 
@@ -30,17 +31,17 @@ Motivation:
 New on the web, contains downloadable, full-text corpus data set from ( NOW, Wikipedia, COCA, COHA, GloWbE) that are in English and the Corpus del Español data set. From the English data set there are two of them that contains 20 English speaking countries. In order to have a quick overview of the available data, we check how many times some key words "Intolerance", "Gluten", "Health" appear in 3 data sets.
 
 | Data Set | Countries | # Health | # Gluten | # Intolerant |
-|----------|-----------|----------|----------|--------------|
-| NOW      | 20        |  605000  |   8331   | 5116         |
-| COCA     | 1         |  183000  |    661   | 816          |
-| COHA     | 1         |   43000  |    200   | 1230         |
+|:---------|:----------|:---------|:---------|:-------------|
+| NOW      | 20        | 605000   | 8331     | 5116         |
+| COCA     | 1         | 183000   | 661      | 816          |
+| COHA     | 1         | 43000    | 200      | 1230         |
 
 
 By adding the 3 others data set we think we will have enough material to make an analysis of the trends and its propagation. It will be possible for us to go further in the trend propagation by analysing how the health issues cross the barrier of language by including the Spanish dataset.
 The data set are provided in 3 different ways i.e as a raw data set, words/lemma, or linear text.
-The words/lemma/Pos will allow to search for various declinaison of the word health more easily. The three corpus are available for download, we will then choose which one to use (more likely words/lemma) for a specific purpose. We will be able to directly search in that database through python.
+The words/lemma/Pos will allow to search for various types of the word health more easily. The three corpus are available for download, we will then choose which one to use (more likely words/lemma) for a specific purpose. We will be able to directly search in that database through python.
 
-Other possible data set: 200 years of News. It could give us an other information perspective as new will be more localized but can be a strength whether our project wants to identify the questions on country scale.
+Other possible data set: 200 years of News. It could give us an other information perspective as new will be more localised but can be a strength whether our project wants to identify the questions on country scale.
 
 
 
@@ -61,12 +62,12 @@ Week #3 :
 - Work on a possible data story
 - Work on the descriptive analysis
 Week #4
-- Finalize the notebook
+- Finalise the notebook
 - Structured and informed plan for the next milestones.
 - Start to work on our data story or report
-- Start to discuss about the presentation fo the poster
+- Start to discuss about the presentation for the poster
 
 # Questions for TAa
 Add here some questions you have for us, in general or project-specific.
--The wikipedia corpuse is also present on the site. Will we be allowed to use it?
+-The wikipedia corpus is also present on the site. Will we be allowed to use it?
 -We will need powerful tools of natural language processing to analyse the meaning of the articles. Is it doable?
