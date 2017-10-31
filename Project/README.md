@@ -17,17 +17,42 @@ Motivation:
 
 # Research questions
 ## A list of research questions you would like to address during the project.
--What are important health issues of the 21st century?
--Impact of different behaviour on health?
--
+- What are important health issues of the 21st century?
+- Impact of different behaviour/habits on health?
+- Malnutrition, undernourishment or overconsumption of specific food could hqve an impact on the health issues.
 
 # Dataset
 ## List the dataset(s) you want to use, and some ideas on how do you expect to get, manage, process and enrich it/them. Show us you've read the docs and some examples, and you've a clear idea on what to expect. Discuss data size and format if relevant.
--News On the Web
--200 years of News
+
+-News On the Web : Bigger dataset and information is spreaded accross many regions
+
+-200 years of News : Information more localized but can be a strength whether our project wants to identify the questions on country scale.
 -Wikipedia
+
+
 # A list of internal milestones up until project milestone 2
 ## Add here a sketch of your planning for the next project milestone.
+The project milestone should contain a notebook with data collection and descriptive analysis.
+
+Week #1 : 
+- Agree on the dataset and what information to extract
+- Discuss with the TA about our work plan.
+- Find function to handle text extraction (only important words, without articles words such as the, a, for ...)
+
+Week #2 :
+- Data collection
+- Find correlation to answer the questions
+
+Week #3 :
+- Work on a possible data story
+- Work on the descriptive analysis
+Week #4
+- Finalize the notebook
+- Structured and informed plan for the next milestones.
+- Start to work on our data story or report
+- Start to discuss about the presentation fo the poster
 
 # Questions for TAa
 Add here some questions you have for us, in general or project-specific.
+
+- DO YOU GUYS LOVE OUR PROJECT PROPOSAL ?
