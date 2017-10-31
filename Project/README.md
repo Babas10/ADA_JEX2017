@@ -7,11 +7,13 @@ Our goal is to extract information about healthy pattern in a dataset. More prec
 Secondly we would like to see if new problem have appeared and other dissapeared or have been solved. It would be possible to analyse this by finding sudden increase/decrease in frequency of specific terms.
 
 Story:
-- 
+
+    - Health is a key factor that follows us along through life. Epochs pay different attention to it, but still were always concerned a moment or another. Through the evolution of technologies and with the expansion of the knowledge through the internet,  people became much more concerned. With it new theories, lobbies and trends, appeared in society, changing definitively the way of life of people and the link with health. We will by analysing web news of different countries try to perceive the changes of the meaning of the word "health" and try to identify which are the key factor related to those changes.
 
 Motivation:
--It would be very interesting to see if some problems appeared / dissapeared in some part of the world before other.
--How did our percpetion of healthy has evolved ? (When a developing country becomes a developed country people can focus on different problems. Before the bottom of the pyramid is fullfilled it is not possible to address problems in the top of the pyramid)
+
+    -  It would be very interesting to see if some problems appeared / dissapeared in some part of the world before other.
+    -  How did our percpetion of healthy has evolved ? (When a developing country becomes a developed country people can focus on different problems. Before the bottom of the pyramid is fullfilled it is not possible to address problems in the top of the pyramid)
 
 
 
@@ -24,7 +26,18 @@ Motivation:
 # Dataset
 ## List the dataset(s) you want to use, and some ideas on how do you expect to get, manage, process and enrich it/them. Show us you've read the docs and some examples, and you've a clear idea on what to expect. Discuss data size and format if relevant.
 
--News On the Web : Bigger dataset and information is spreaded accross many regions
+News On the Web : New on the web, contains downloadable, full-text corpus data set from ( NOW, Wikipedia, COCA, COHA, GloWbE) that are in English and the Corpus del Español data set. From the English data set there are two that contains 20 English speaking countries. In order to have a quick overview of the available data, we check in the amount of time some key words "Intolerance", "Gluten", "Health" appear in 3 data sets.
+
+| Data Set | Countries | # Health | # Gluten | # Intolerant |
+|----------|-----------|----------|----------|--------------|
+| NOW      | 20        |  605000  |   8331   | 5116         |
+| COCA     | 1         |  183000  |    661   | 816          |
+| COHA     | 1         |   43000  |    200   | 1230         |
+
+
+By adding the 3 others data set we think we will have enough material to make an analysis of the trends and its propagation. It will be possible for us to go further in the trend propagation by analysing how the health issues cross the barrier of language by including the Spanish dataset.
+The data set are provided in 3 different ways i.e as a raw data set, words/lemma, or linear text. 
+
 
 -200 years of News : Information more localized but can be a strength whether our project wants to identify the questions on country scale.
 -Wikipedia
