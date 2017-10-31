@@ -69,5 +69,6 @@ Week #4
 
 # Questions for TAa
 Add here some questions you have for us, in general or project-specific.
--The wikipedia corpus is also present on the site. Will we be allowed to use it?
--We will need powerful tools of natural language processing to analyse the meaning of the articles. Is it doable?
+- The wikipedia corpus is also present on the site. Will we be allowed to use it?
+
+- We will need powerful tools of natural language processing to analyse the meaning of the articles. Is it doable?
