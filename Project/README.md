@@ -8,7 +8,10 @@ Secondly we would like to see if new problem have appeared and other dissapeared
 
 Story:
 
-    ⋅⋅* Health is a key factor that follows us along through life. Epochs pay different attention to it, but still were always concerned a moment or another. Through the evolution of technologies and with the expansion of the knowledge through the internet,  people became much more concerned. With it new theories, lobbies and trends, appeared in society, changing definitively the way of life of people and the link with health. We will by analysing web news of different countries try to perceive the changes of the meaning of the word "health" and try to identify which are the key factor related to those changes.
+    ⋅⋅* Health is a key factor that follows us along through life. Epochs pay different attention to it, but still were always concerned a moment or another. 
+    Through the evolution of technologies and with the expansion of the knowledge through the internet,  people became much more concerned. 
+    With it new theories, lobbies and trends, appeared in society, changing definitively the way of life of people and the link with health. 
+    We will by analysing web news of different countries try to perceive the changes of the meaning of the word "health" and try to identify which are the key factor related to those changes.
 
 Motivation:
 
