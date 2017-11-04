@@ -1,6 +1,6 @@
 # Title : The food symphony
 
-Mozart Food Symphony
+ADA's Food Symphony
 
 (The perfood harmony) perfect + food = perfood ?
 
@@ -25,10 +25,20 @@ Indeed, best chef in the world always tries when making a creation, to have all 
 Motivation: We are three students that enjoy cooking and eating, however, as students, it's not always easy to take the time to check for a recipe, look at the ingredients we already have and what we are missing. Also, it's not easy to have new ideas or to know whether what are left in our fridges could be cooked together. We believe this project is a good idea, to speed up process, indeed one would need to give as input the ingredients and a new tasty recipe would pop up.
 
 
-
 # Research questions
 ## A list of research questions you would like to address during the project.
 
+1. Are common ingredients (like meats, rice or pasta) essential for a good meal ? Or whether exotic ingredients make it special ?
+
+2. What is the essence of each ingredient and what do they bring in a recipe ? 
+
+3. Are the high calorie recipes are the most popular ?
+
+4. What kind of correlation between ingredient will be the best to find the harmony in a recipe ? 
+
+5. What are the processus of the best chef in the world to find new recepies ? And could we apply this to our project ?
+
+4. What should we implement in our interface to make it interactive and friendly using ?
 
 
 # Dataset
@@ -42,25 +52,35 @@ Motivation: We are three students that enjoy cooking and eating, however, as stu
 The project milestone should contain a notebook with data collection and descriptive analysis.
 
 Week #1 :
-- Agree on the dataset and what information to extract
+- Agree on the dataset and what information to extract.
 - Discuss with the TA about our work plan.
 - Find function to handle text extraction (only important words, without articles words such as the, a, for ...)
 
 Week #2 :
 - Data collection
-- Find correlation to answer the questions
+- Group ingredients into categories
+- Characterize the essence and role of each ingredients
+- Start to find correlation between them
+- Work on possible combinations
 
 Week #3 :
-- Work on a possible data story
+- Come up with a solution to measure the harmony of our recipes
+- Start to work on the learning phase
+- Work on chef's processus to find new recipes
+- Work on our data story
 - Work on the descriptive analysis
+
 Week #4
-- Finalise the notebook
+- Finalize the notebook
 - Structured and informed plan for the next milestones.
 - Start to work on our data story or report
 - Start to discuss about the presentation for the poster
 
 # Questions for TAa
 Add here some questions you have for us, in general or project-specific.
-- The wikipedia corpus is also present on the site. Will we be allowed to use it?
 
-- We will need powerful tools of natural language processing to analyse the meaning of the articles. Is it doable?
+- Would it be possible along with the poster to bring some meals cooked based our project ?
+
+- We really want to do something interactive, Would you have any recommandations (website or interface on computer) ?
+
+- We will need powerful tools of natural language processing and machine learning to extract ingredients and come up with new combinaison. Is it doable?
