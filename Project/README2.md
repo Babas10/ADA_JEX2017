@@ -1,6 +1,9 @@
 # Title : The food symphony
+
 Mozart Food Symphony
+
 (The perfood harmony) perfect + food = perfood ?
+
 Taste Affinities
 
 # Abstract
