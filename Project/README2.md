@@ -10,7 +10,7 @@ First of all, will be to extract the essence of each ingredient in a recipe and 
 Story:
 
 We believe that ingredients in a recipe are like harmonies in music, separated they are pleasant to hear, but when perfectly combined harmonies can come up with something special (Schubert' Symphonies).
-Therefore, we are convinced that the best combinations have never been done and also that special combinations have yet to be found. Indeed, best chef in the world always tries when making a creation, to have all ingredients in osmosis. What if the best combination is a fish from Tahiti, a spice from Tierra del Fuego, some exotic vegetable from Vietnam and olive oil from Italy. How would be able to produce it?
+Therefore, we are convinced that some of the best combinations are still waiting to be found. Indeed, best chef in the world always tries when making a creation, to have all ingredients in osmosis. What if the best combination is a fish from Tahiti, a spice from Tierra del Fuego, some exotic vegetable from Vietnam and olive oil from Italy. How would be able to produce it?
 
 Motivation: We are three students that enjoy cooking and eating, however, as students, it's not always easy to take the time to check for a recipe, look at the ingredients we already have and what we are missing. Also, it's not easy to have new ideas or to know whether what are left in our fridges could be cooked together.  Thus, we believe this project suit us well. We have the opportunity to work on a subject that we enjoy and to create something new that may help other people to improve all the cooking process.
 
@@ -19,16 +19,17 @@ Motivation: We are three students that enjoy cooking and eating, however, as stu
 
 1. Are common ingredients (like meats, rice or pasta) essential for a good meal ? Or whether exotic ingredients make it special ?
 
-2. What is the essence of each ingredient and what do they bring in a recipe ? 
+2. What is the essence of each ingredient and what do they bring in a recipe ?
 
-3. Are the high calorie recipes are the most popular ?
+3. What are the characteristics of popular recipes ?
 
-4. What kind of correlation between ingredient will be the best to find the harmony in a recipe ? 
+4. What kind of correlation between ingredient will be the best to find the harmony in a recipe ?
 
 5. What are the process of the best chef in the world to find new recipes ? And could we apply this to our project ?
 
 6. What should we implement in our interface to make it interactive and friendly using ?
 
+7. The cooking process does have a great importance in the preparation of the meal. We will need to find a workaround. 
 
 # Dataset
 
@@ -68,7 +69,7 @@ Week #4
 
 # Questions for TAa
 
-- Would it be possible along with the poster to bring some meals cooked based our project ?
+- It would be usefull to also have the number of calories, satured fat etc in each ingredients. Can we use an external documentation for that? Or can we infer it from the data using machine learning?
 
 - We really want to do something interactive, Would you have any recommendations (website or interface on computer) ?
 
