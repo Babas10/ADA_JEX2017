@@ -1,0 +1,74 @@
+# Title: Perception of Health
+
+
+# Abstract
+## A 150 word description of the project idea, goals, dataset used. What story you would like to tell and why? What's the motivation behind your project?
+Our goal is to extract information about healthy pattern in a dataset. More precisely we would like to find articles with health related subject, rate their importance and get more specific information. For example, we could then plot a health impact in term of different discrete "problems": fast food, gluten, etc.. by region and by period if possible.
+Secondly, we would like to see if new problem have appeared and other disappeared or have been solved. It would be possible to analyse this by finding sudden increase/decrease in frequency of specific terms.
+
+Story:
+
+Health is a key factor that follows us along through life. Through the different era of mankind, the perception of health has evolved and reached very precise subject on how we should behave to avoid diseases instead of simply curing them. Furthermore with the evolution of technologies and the expansion of the knowledge through the internet, people became much more concerned. In consequences, new theories, lobbies and trends, appeared in society, changing definitively the way of life and the link with health. We will by analysing web news of different countries try to perceive the changes of the meaning of the word "health" and try to identify which are the key factor related to those changes.
+
+Our motivations are to be able to predict the impact of health-related "problems" in a country and its propagation in another country (related to question 1), and to be able to realise how our perception of healthy has evolved? (In an extreme example, if a country passes from developing to developed should it stop using gluten cause all of a sudden it will be a capital health matter?)
+
+
+
+
+
+
+# Research questions
+## A list of research questions you would like to address during the project.
+
+- Are some problems appearing / disappearing in some parts of the world before other?
+- What are important health issues of the 21st century?
+- Impact of different behaviour/habits on health?
+- Importance of Malnutrition, undernourishment or overconsumption of food in society?
+
+# Dataset
+## List the dataset(s) you want to use, and some ideas on how do you expect to get, manage, process and enrich it/them. Show us you've read the docs and some examples, and you've a clear idea on what to expect. Discuss data size and format if relevant.
+
+New on the web, contains downloadable, full-text corpus data set from ( NOW, Wikipedia, COCA, COHA, GloWbE) that are in English and the Corpus del Español data set. From the English data set there are two of them that contains 20 English speaking countries. In order to have a quick overview of the available data, we check how many times some key words "Intolerance", "Gluten", "Health" appear in 3 data sets.
+
+| Data Set | Countries | # Health | # Gluten | # Intolerant |
+|:---------|:----------|:---------|:---------|:-------------|
+| NOW      | 20        | 605000   | 8331     | 5116         |
+| COCA     | 1         | 183000   | 661      | 816          |
+| COHA     | 1         | 43000    | 200      | 1230         |
+
+
+By adding the 3 others data set we think we will have enough material to make an analysis of the trends and its propagation. It will be possible for us to go further in the trend propagation by analysing how the health issues cross the barrier of language by including the Spanish dataset.
+The data set are provided in 3 different ways i.e as a raw data set, words/lemma, or linear text.
+The words/lemma/Pos will allow to search for various types of the word health more easily. The three corpus are available for download, we will then choose which one to use (more likely words/lemma) for a specific purpose. We will be able to directly search in that database through python.
+
+Other possible data set: 200 years of News. It could give us an other information perspective as new will be more localised but can be a strength whether our project wants to identify the questions on country scale.
+
+
+
+# A list of internal milestones up until project milestone 2
+## Add here a sketch of your planning for the next project milestone.
+The project milestone should contain a notebook with data collection and descriptive analysis.
+
+Week #1 :
+- Agree on the dataset and what information to extract
+- Discuss with the TA about our work plan.
+- Find function to handle text extraction (only important words, without articles words such as the, a, for ...)
+
+Week #2 :
+- Data collection
+- Find correlation to answer the questions
+
+Week #3 :
+- Work on a possible data story
+- Work on the descriptive analysis
+Week #4
+- Finalise the notebook
+- Structured and informed plan for the next milestones.
+- Start to work on our data story or report
+- Start to discuss about the presentation for the poster
+
+# Questions for TAa
+Add here some questions you have for us, in general or project-specific.
+- The wikipedia corpus is also present on the site. Will we be allowed to use it?
+
+- We will need powerful tools of natural language processing to analyse the meaning of the articles. Is it doable?
