@@ -59,7 +59,7 @@ def conditionsSelection(x):
     else: return False
 
 
-def extract_ingredients_quantities(one_receipe,measure_quantity_list):
+def extract_ingredients_quantities(one_receipe,measure_quantity_list,techniques_list):
 
     if '|' in one_receipe:
         ingredients=one_receipe.split('|')
@@ -76,7 +76,7 @@ def extract_ingredients_quantities(one_receipe,measure_quantity_list):
         elem_list=[]
         techniques=[]
         for w,t in a:
-            if t=='VBN':
+            if (t=='VBN') or (w in techniques_list):
                 techniques.append(w)
             else:
                 elem_list.append(w)

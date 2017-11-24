@@ -13,7 +13,9 @@ pounds
 ounce
 ounces
 table
+tables
 inch
+inches
 canned
 jars
 jar
@@ -48,3 +50,7 @@ boxes
 to
 drops
 drop
+gallon
+gallons
+cubes
+cubed
