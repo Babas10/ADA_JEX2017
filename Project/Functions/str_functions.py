@@ -59,7 +59,10 @@ def conditionsSelection(x):
     else: return False
 
 
-def extract_ingredients_quantities(one_receipe,measure_quantity_list,techniques_list):
+def extract_ingredients(one_receipe,ingredients_list,techniques_list,units_list):
+    ''' Function extractiing all ingredients, quantities and possiblity technics of cooking
+
+    '''
     lemmatizer = WordNetLemmatizer()
     if '|' in one_receipe:
         ingredients=one_receipe.split('|')
@@ -69,87 +72,32 @@ def extract_ingredients_quantities(one_receipe,measure_quantity_list,techniques_
     dic_ingre={}
     dic_tec={}
     for elem in ingredients:
-        #postag accepts only lists and a list should be returned: this is the way ( take each elem one by one)
-        sent = sum([pos_tag([w]) for w in elem.split(' ') if len(w)>0],[])
-        #sent=pos_tag(nltk.word_tokenize(elem))
+        #split in words
+        elem_list=elem.split(' ')
+        #keep only alphanumerics in each words
+        elem_list=[re.sub('[^0-9a-zA-Z/ ]+', '', x) for x in elem_list]
+        #keep only the root of the word
+        check = [lemmatizer.lemmatize(token) for token in elem_list]
 
-        a = list(filter(lambda x: conditionsSelection(x), sent))
 
-        elem_list=[]
         techniques=[]
-        for w,t in a:
-            if (t=='VBN') or (t=='VBD') or (t=='VB') or  (w in techniques_list):
-                techniques.append(w)
-            else:
-                elem_list.append(w)
-
-        elem_list = [lemmatizer.lemmatize(token) for token in elem_list]
-        if (bool(re.search(r'\d', elem_list[0]))):
-            add=0
-            while (elem_list[add] in measure_quantity_list) or bool(re.search(r'\d',elem_list[add])):
-                add=add+1
-
-            s_ingredient=' '.join(elem_list[add:])
-
-            parenthesis_del = re.compile('\(.+?\)')
-            s_ingredient = parenthesis_del.sub('', s_ingredient)
-
-            if 'or ' in s_ingredient:
-                split=s_ingredient.split('or ')
-                if 'taste' in split[1] or bool(re.search(r'\d', split[1])):
-                    s_ingredient=split[0]
-                else: s_ingredient=split[1]
-
-            dic_ingre[s_ingredient.replace(',','')]=' '.join(elem_list[0:add])
-            dic_tec[s_ingredient.replace(',','')]=techniques
-
-    return dic_ingre,dic_tec
-
-def extract_ingredients_quantities2(one_receipe,measure_quantity_list,techniques_list):
-    lemmatizer = WordNetLemmatizer()
-    if '|' in one_receipe:
-        ingredients=one_receipe.split('|')
-    else:
-        ingredients=one_receipe.split(', ')
-
-    dic_ingre={}
-    dic_tec={}
-    for elem in ingredients:
-
-        #sent = sum([pos_tag([w]) for w in elem.split(' ')],[])
-        sent=pos_tag(nltk.word_tokenize(elem))
-
-        a = list(filter(lambda x: conditionsSelection(x), sent))
-
-        elem_list=[]
-        techniques=[]
-        for w,t in a:
-            if (t=='VBN') or (t=='VBD')  or (t=='VB') or  (w in techniques_list):
-                techniques.append(w)
-            else:
-                elem_list.append(w)
-
-        elem_list = [lemmatizer.lemmatize(token) for token in elem_list]
-        if (bool(re.search(r'\d', elem_list[0]))):
-            add=0
-            while (elem_list[add] in measure_quantity_list) or bool(re.search(r'\d',elem_list[add])) :
-                if add<len(elem_list)-1:
-                    add=add+1
-                else:
-                    break
-
-            s_ingredient=' '.join(elem_list[add:])
-
-            parenthesis_del = re.compile('\(.+?\)')
-            s_ingredient = parenthesis_del.sub('', s_ingredient)
-
-            if 'or ' in s_ingredient:
-                split=s_ingredient.split('or ')
-                if 'taste' in split[1] or bool(re.search(r'\d', split[1])):
-                    s_ingredient=split[0]
-                else: s_ingredient=split[1]
-
-            dic_ingre[s_ingredient.replace(',','')]=' '.join(elem_list[0:add])
-            dic_tec[s_ingredient.replace(',','')]=techniques
+        units=[]
+        one_ingr=None
+        for word in check:
+            if word in techniques_list:  #check if it belongs to our technics list
+                techniques.append(word)
+            elif word in ingredients_list: #check if it belongs to our ingredient list
+                one_ingr=word
+            elif (word in units_list) or bool(re.search(r'\d',word)): #check if it belongs to our unit list or is alphanumeric
+                units.append(word)
+        for biword in nltk.bigrams(check): # check if we have a biword ingredient
+            if ' '.join(biword) in ingredients_list:
+                one_ingr=' '.join(biword)
+        if one_ingr==None :        # check if we have no ingredient : avoid this element of recipe
+            continue
+        if len(units)==0:
+            units.append('1 unit') # fill with a special unit if we are dealing with no quantity
+        dic_ingre[one_ingr]=' '.join(units)
+        dic_tec[one_ingr]=' '.join(techniques)
 
     return dic_ingre,dic_tec
