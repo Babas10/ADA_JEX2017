@@ -60,7 +60,7 @@ def conditionsSelection(x):
 
 
 def extract_ingredients_quantities(one_receipe,measure_quantity_list,techniques_list):
-
+    lemmatizer = WordNetLemmatizer()
     if '|' in one_receipe:
         ingredients=one_receipe.split('|')
     else:
@@ -83,7 +83,7 @@ def extract_ingredients_quantities(one_receipe,measure_quantity_list,techniques_
             else:
                 elem_list.append(w)
 
-
+        elem_list = [lemmatizer.lemmatize(token) for token in elem_list]
         if (bool(re.search(r'\d', elem_list[0]))):
             add=0
             while (elem_list[add] in measure_quantity_list) or bool(re.search(r'\d',elem_list[add])):
