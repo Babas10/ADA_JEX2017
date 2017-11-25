@@ -6,7 +6,7 @@ from nltk import pos_tag
 from nltk.tag import UnigramTagger
 from nltk.corpus import brown
 import webcolors
-
+from nltk.stem import WordNetLemmatizer
 
 
 def composedWords(x):
@@ -78,7 +78,7 @@ def extract_ingredients_quantities(one_receipe,measure_quantity_list,techniques_
         elem_list=[]
         techniques=[]
         for w,t in a:
-            if (t=='VBN') or (t=='VBD') or (t='VB') or  (w in techniques_list):
+            if (t=='VBN') or (t=='VBD') or (t=='VB') or  (w in techniques_list):
                 techniques.append(w)
             else:
                 elem_list.append(w)
@@ -106,6 +106,7 @@ def extract_ingredients_quantities(one_receipe,measure_quantity_list,techniques_
     return dic_ingre,dic_tec
 
 def extract_ingredients_quantities2(one_receipe,measure_quantity_list,techniques_list):
+    lemmatizer = WordNetLemmatizer()
     if '|' in one_receipe:
         ingredients=one_receipe.split('|')
     else:
@@ -123,12 +124,12 @@ def extract_ingredients_quantities2(one_receipe,measure_quantity_list,techniques
         elem_list=[]
         techniques=[]
         for w,t in a:
-            if (t=='VBN') or (t=='VBD')  or (t='VB') or  (w in techniques_list):
+            if (t=='VBN') or (t=='VBD')  or (t=='VB') or  (w in techniques_list):
                 techniques.append(w)
             else:
                 elem_list.append(w)
 
-
+        elem_list = [lemmatizer.lemmatize(token) for token in elem_list]
         if (bool(re.search(r'\d', elem_list[0]))):
             add=0
             while (elem_list[add] in measure_quantity_list) or bool(re.search(r'\d',elem_list[add])) :
