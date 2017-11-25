@@ -54,3 +54,5 @@ gallon
 gallons
 cubes
 cubed
+cab
+cabs

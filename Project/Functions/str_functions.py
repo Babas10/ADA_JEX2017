@@ -51,9 +51,9 @@ def conditionsSelection(x):
     #    if composedWord[0]
 
 
-    if (x[:][1] in('JJ') and x[:][0] in (webcolors.CSS3_NAMES_TO_HEX)):
-        return True
-    if (x[:][1] not in('DT','PRP$','IN','JJ','RB','ADV','PRT','PRON')):
+    #if (x[:][1] in('JJ') and x[:][0] in (webcolors.CSS3_NAMES_TO_HEX)):
+    #    return True
+    if (x[:][1] not in('DT','PRP$','IN','JJ','RB','ADV','PRT','PRON','CC')):
         return True
 
     else: return False
@@ -69,23 +69,73 @@ def extract_ingredients_quantities(one_receipe,measure_quantity_list,techniques_
     dic_ingre={}
     dic_tec={}
     for elem in ingredients:
-
-        sent = sum([pos_tag([w]) for w in elem.split(' ')],[])
+        #postag accepts only lists and a list should be returned: this is the way ( take each elem one by one)
+        sent = sum([pos_tag([w]) for w in elem.split(' ') if len(w)>0],[])
+        #sent=pos_tag(nltk.word_tokenize(elem))
 
         a = list(filter(lambda x: conditionsSelection(x), sent))
+
         elem_list=[]
         techniques=[]
         for w,t in a:
-            if (t=='VBN') or (w in techniques_list):
+            if (t=='VBN') or (t=='VBD') or (t='VB') or  (w in techniques_list):
                 techniques.append(w)
             else:
                 elem_list.append(w)
 
 
         if (bool(re.search(r'\d', elem_list[0]))):
-            add=1
+            add=0
             while (elem_list[add] in measure_quantity_list) or bool(re.search(r'\d',elem_list[add])):
                 add=add+1
+
+            s_ingredient=' '.join(elem_list[add:])
+
+            parenthesis_del = re.compile('\(.+?\)')
+            s_ingredient = parenthesis_del.sub('', s_ingredient)
+
+            if 'or ' in s_ingredient:
+                split=s_ingredient.split('or ')
+                if 'taste' in split[1] or bool(re.search(r'\d', split[1])):
+                    s_ingredient=split[0]
+                else: s_ingredient=split[1]
+
+            dic_ingre[s_ingredient.replace(',','')]=' '.join(elem_list[0:add])
+            dic_tec[s_ingredient.replace(',','')]=techniques
+
+    return dic_ingre,dic_tec
+
+def extract_ingredients_quantities2(one_receipe,measure_quantity_list,techniques_list):
+    if '|' in one_receipe:
+        ingredients=one_receipe.split('|')
+    else:
+        ingredients=one_receipe.split(', ')
+
+    dic_ingre={}
+    dic_tec={}
+    for elem in ingredients:
+
+        #sent = sum([pos_tag([w]) for w in elem.split(' ')],[])
+        sent=pos_tag(nltk.word_tokenize(elem))
+
+        a = list(filter(lambda x: conditionsSelection(x), sent))
+
+        elem_list=[]
+        techniques=[]
+        for w,t in a:
+            if (t=='VBN') or (t=='VBD')  or (t='VB') or  (w in techniques_list):
+                techniques.append(w)
+            else:
+                elem_list.append(w)
+
+
+        if (bool(re.search(r'\d', elem_list[0]))):
+            add=0
+            while (elem_list[add] in measure_quantity_list) or bool(re.search(r'\d',elem_list[add])) :
+                if add<len(elem_list)-1:
+                    add=add+1
+                else:
+                    break
 
             s_ingredient=' '.join(elem_list[add:])
 
