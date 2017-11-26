@@ -1109,7 +1109,8 @@ zander
 zest
 alfafa
 almonds
-apricotsbeans
+apricots
+beans
 bechamel
 berries
 brie
@@ -1137,3 +1138,27 @@ tuna
 soy
 soya
 eggplant
+tortilla
+zucchini
+yogurt
+jalapeno
+cilantro
+chili powder
+pecan
+arugula
+whiskey
+cornstarch
+cornmeal
+pecan
+feta
+endive
+cereal
+sesame
+chile paste
+bulgur
+amaretto
+chili
+pepperoncini
+gruyere
+agave
+cayenne

@@ -156,9 +156,9 @@ def delParenthesis(ingridient,loc):
         sentence += str(words)
     return sentence
 
-def add_preprocess(ingr_dataframe,measure_quantity_list):
+def fun_add_preprocess(ingr_dataframe,measure_quantity_list):
     ''' Main function of preprocessing applied on recipes
-        
+
     '''
 
     zero_data = np.zeros((len(ingr_dataframe),1))

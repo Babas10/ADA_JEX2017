@@ -59,7 +59,64 @@ def conditionsSelection(x):
     else: return False
 
 
-def extract_ingredients(one_receipe,ingredients_list,techniques_list,units_list):
+def fun_covert_to_float(frac_str):
+
+    splited_frac_str = frac_str.split(' ')
+
+    if '/' in frac_str :
+        fractionSplit = splited_frac_str[0].split('/')
+        frac = float(fractionSplit[0])/float(fractionSplit[1])
+        return frac
+
+    else:
+        frac = float(splited_frac_str[0])
+        return frac
+
+def fun_unit_corrector(string):
+
+    newUnit = ""
+    splited_string = string.split(' ')
+    dict_conver = {'teaspoon' : 5,'tablespoon' :15, 'oz': 30,'cup': 237,'pint' : 474,'quart':946, 'gallon': 3785,'dl' :100,'pound' :453,'ounce' :29,'g' : 1,'kg': 1000,  \
+        'l': 1000, 'ml': 1,'mg':1,'bottle':750,'drop':0.05,'pinch':0.36,'jar':1000,'can':330,'unit':1,'gill':118}
+
+    teaspoon = ['teaspoon','tsp','t','teaspoon']
+    tablespoon = ['tablespoon' ,'T', 'tbl', 'tbs','tbsp']
+    oz = ['oz', 'fl', 'fluid ounce']
+    cup = ['cup', 'c']
+    pint =  ['pint','p', 'pt', 'fl pt']
+    quart =  ['quart','q', 'qt','fl qt']
+    gallon =  ['gallon', 'g', 'gal']
+    ml = ['ml', 'milliliter', 'millilitre', 'cc','mL']
+    l = ['l', 'liter', 'litre', 'L']
+    dl = ['dl','deciliter','decilitre','dL']
+    pound = ['pound','lb']
+    ounce = ['ounce','oz']
+    mg = ['mg','milligram','milligramme']
+    kg = ['kg', 'kilogramme','kilogram']
+    g = ['g','gram']
+    unit = ['unit','stalk','package']
+    other_indic=['bottle','pinch','jar','can','drop','gill']
+
+    unit_list = [teaspoon, tablespoon, oz, cup, pint, pint, quart, gallon, ml, l, dl, pound, ounce, mg, kg, g, unit]
+
+    #if (len(splited_string) == 1 and splited_string[0] == ''):
+    #    return ''
+
+    for lists in unit_list:
+        for i,x in enumerate(splited_string):
+            if x in lists:
+                newUnit = lists[0]
+                gram_value = float(dict_conver[newUnit]) * fun_covert_to_float(splited_string[abs(i-1)])
+                return gram_value
+            if x in other_indic:
+                gram_value = float(dict_conver[x]) * fun_covert_to_float(splited_string[abs(i-1)])
+                return gram_value
+
+    print(splited_string)
+    return 0
+
+
+def fun_extract_ingredients(one_receipe,ingredients_list,techniques_list,units_list,to_gram=True):
     ''' Function extractiing all ingredients, quantities and possiblity technics of cooking
 
     '''
@@ -71,33 +128,56 @@ def extract_ingredients(one_receipe,ingredients_list,techniques_list,units_list)
 
     dic_ingre={}
     dic_tec={}
+    wasted_ingr=[]
+    wasted_number=0
     for elem in ingredients:
         #split in words
+        elem=elem.replace('-',' ')
         elem_list=elem.split(' ')
         #keep only alphanumerics in each words
         elem_list=[re.sub('[^0-9a-zA-Z/ ]+', '', x) for x in elem_list]
         #keep only the root of the word
         check = [lemmatizer.lemmatize(token) for token in elem_list]
-
+        check=sum([re.findall(r'[A-Za-z]+|\d+', x) for x in check],[])
 
         techniques=[]
         units=[]
         one_ingr=None
+        no_unit=True
+        no_number=True
+        check = list(filter(None, check))
         for word in check:
-            if word in techniques_list:  #check if it belongs to our technics list
+            if word in techniques_list:#check if it belongs to our technics list
                 techniques.append(word)
-            elif word in ingredients_list: #check if it belongs to our ingredient list
+            elif word in ingredients_list:#check if it belongs to our ingredient list
                 one_ingr=word
-            elif (word in units_list) or bool(re.search(r'\d',word)): #check if it belongs to our unit list or is alphanumeric
+            elif bool(re.search(r'\d',word)) and (no_number):#check if it belongs to our unit list or is alphanumeric
                 units.append(word)
+                no_number=False
+            elif (word in units_list) and (no_unit):
+                units.append(word)
+                no_unit=False
         for biword in nltk.bigrams(check): # check if we have a biword ingredient
             if ' '.join(biword) in ingredients_list:
                 one_ingr=' '.join(biword)
-        if one_ingr==None :        # check if we have no ingredient : avoid this element of recipe
+        if one_ingr==None :      # check if we have no ingredient : avoid this element of recipe
+            wasted_number=wasted_number+1
+            wasted_ingr.append(' '.join(check))
             continue
-        if len(units)==0:
-            units.append('1 unit') # fill with a special unit if we are dealing with no quantity
-        dic_ingre[one_ingr]=' '.join(units)
+        if(len(' '.join(units))==0):  # fill with a special unit if we are dealing with no quantity
+            units.append('1')
+            units.append('unit')
+        elif no_unit:
+            units.append('unit')
+        elif no_number:
+            units.append('1')
+
+
+        units=' '.join(units)
+        if to_gram:
+            units=fun_unit_corrector(units)
+
+        dic_ingre[one_ingr]=units
         dic_tec[one_ingr]=' '.join(techniques)
 
-    return dic_ingre,dic_tec
+    return dic_ingre,dic_tec,wasted_ingr,wasted_number

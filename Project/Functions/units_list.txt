@@ -46,17 +46,6 @@ gram
 kg
 kilogram
 kilogramme
-mm
-millimeter
-millimetre
-cm
-centimeter
-centimetre
-m
-meter
-metre
-inch
-in
 can
 cup
 jar

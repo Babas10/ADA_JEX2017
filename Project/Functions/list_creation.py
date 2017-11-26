@@ -23,7 +23,7 @@ def verbeSelection(x):
     else: return False
 
 
-def technique_list(dataset):
+def fun_technique_list(dataset,path):
     '''
     find all the verbs in a dataset of recipes
     '''
@@ -46,13 +46,13 @@ def technique_list(dataset):
             if len(a)>0 and a[0][0] not in techniqueList:
                 if a[0][0][-2:] == 'ed':
                     techniqueList.append(a[0][0])
-    with open('technique_list.txt', 'w') as f:
+    with open(path+'technique_list.txt', 'w') as f:
         for s in techniqueList:
             f.write(s + '\n')
     print('technique_list.txt has been created')
 
 
-def ingredients_list():
+def fun_ingredients_list(path):
     '''
     extract a list of ingredient from a website
     The website is easily organise and contains one page of ingredients for each letter (except x)
@@ -82,8 +82,13 @@ def ingredients_list():
     (set(result_word_not_in_data))
 # ---------------- We add the word from composed word manually
 
-    ingredient_list = ingredient_list +['alfafa','almonds','apricots','beans','bechamel','berries','brie','camembert','chanterelle','chantilly','citrus','corn','emmental','kiwi','lemons','mozzarella','mushrooms','parmesan','peas','potatoes','ricotta', 'roquefort','sausage','shiitake','water','vanilla','vacherin','tuna','soy','soya','eggplant']
-    with open('ingredient_list.txt', 'w') as f:
+    ingredient_list = ingredient_list +['alfafa','almonds','apricots','beans','bechamel','berries','brie',\
+    'camembert','chanterelle','chantilly','citrus','corn','emmental','kiwi','lemons','mozzarella','mushrooms',\
+    'parmesan','peas','potatoes','ricotta', 'roquefort','sausage','shiitake','water','vanilla','vacherin','tuna',\
+    'soy','soya','eggplant','tortilla','zucchini','yogurt','jalapeno','cilantro','chili powder','pecan','arugula',\
+    'whiskey','cornstarch','cornmeal','pecan','feta','endive','cereal','sesame','chile paste','bulgur','amaretto','chili',\
+    'pepperoncini','gruyere','agave','cayenne']
+    with open(path+'ingredient_list.txt', 'w') as f:
         for s in ingredient_list:
             f.write(s + '\n')
     print('Ingredient_list.txt has been created')
