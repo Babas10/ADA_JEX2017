@@ -67,7 +67,8 @@ def fun_covert_to_float(frac_str):
         fractionSplit = splited_frac_str[0].split('/')
         frac = float(fractionSplit[0])/float(fractionSplit[1])
         return frac
-
+    elif bool(re.search('\.([0-9])\.',frac_str)):
+        return float(re.findall('\.([0-9])\.',frac_str)[0])
     else:
         frac = float(splited_frac_str[0])
         return frac
@@ -77,7 +78,7 @@ def fun_unit_corrector(string):
     newUnit = ""
     splited_string = string.split(' ')
     dict_conver = {'teaspoon' : 5,'tablespoon' :15, 'oz': 30,'cup': 237,'pint' : 474,'quart':946, 'gallon': 3785,'dl' :100,'pound' :453,'ounce' :29,'g' : 1,'kg': 1000,  \
-        'l': 1000, 'ml': 1,'mg':1,'bottle':750,'drop':0.05,'pinch':0.36,'jar':1000,'can':330,'unit':1,'gill':118}
+        'l': 1000, 'ml': 1,'mg':1,'bottle':750,'drop':0.05,'pinch':0.36,'jar':1000,'can':330,'unit':'u','gill':118}
 
     teaspoon = ['teaspoon','tsp','t','teaspoon']
     tablespoon = ['tablespoon' ,'T', 'tbl', 'tbs','tbsp']
@@ -85,7 +86,7 @@ def fun_unit_corrector(string):
     cup = ['cup', 'c']
     pint =  ['pint','p', 'pt', 'fl pt']
     quart =  ['quart','q', 'qt','fl qt']
-    gallon =  ['gallon', 'g', 'gal']
+    gallon =  ['gallon', 'gal']
     ml = ['ml', 'milliliter', 'millilitre', 'cc','mL']
     l = ['l', 'liter', 'litre', 'L']
     dl = ['dl','deciliter','decilitre','dL']
@@ -97,7 +98,7 @@ def fun_unit_corrector(string):
     unit = ['unit','stalk','package']
     other_indic=['bottle','pinch','jar','can','drop','gill']
 
-    unit_list = [teaspoon, tablespoon, oz, cup, pint, pint, quart, gallon, ml, l, dl, pound, ounce, mg, kg, g, unit]
+    unit_list = [teaspoon, tablespoon, oz, cup, pint, pint, quart, gallon, ml, l, dl, pound, ounce, mg, kg, g]
 
     #if (len(splited_string) == 1 and splited_string[0] == ''):
     #    return ''
@@ -111,8 +112,9 @@ def fun_unit_corrector(string):
             if x in other_indic:
                 gram_value = float(dict_conver[x]) * fun_covert_to_float(splited_string[abs(i-1)])
                 return gram_value
+            if x in unit:
+                return splited_string[abs(i-1)]+' u'
 
-    print(splited_string)
     return 0
 
 
@@ -134,12 +136,15 @@ def fun_extract_ingredients(one_receipe,ingredients_list,techniques_list,units_l
         #split in words
         elem=elem.replace('-',' ')
         elem_list=elem.split(' ')
+        #avoid special characters appearing in some recipes:
+        if '&#' in elem:
+            continue
         #keep only alphanumerics in each words
-        elem_list=[re.sub('[^0-9a-zA-Z/ ]+', '', x) for x in elem_list]
+        elem_list=[re.sub('[^0-9a-zA-Z/. ]+', '', x) for x in elem_list]
         #keep only the root of the word
         check = [lemmatizer.lemmatize(token) for token in elem_list]
-        check=sum([re.findall(r'[A-Za-z]+|\d+', x) for x in check],[])
-
+        #split str of string with stuck digit : '2cups': '2','cups'
+        check=sum([re.findall(r'[A-Za-z]+|[\d.]+', x) for x in check],[])
         techniques=[]
         units=[]
         one_ingr=None
