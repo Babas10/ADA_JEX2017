@@ -1,27 +1,32 @@
 teaspoon
 t
 tsp
+tsps
 tablespoon
 T
 tbl
+tbls
+tbs
 tbsp
 fluid ounce
-fl oz
-gill
+fl 
+oz
 cup
 c
 pint
 p
 pt
+pts
 fl pt
 quart
 q
 gt
-fl
-qt
+qts
+fl qt
 gallon
 g
 gal
+gals
 ml
 milliliter
 millilitre
@@ -30,6 +35,7 @@ mL
 l
 liter
 litre
+L
 dl
 deciliter
 decilitre
@@ -43,17 +49,21 @@ milligram
 milligramme
 g
 gram
+gramme
 kg
+kgs
 kilogram
 kilogramme
 can
-cup
 jar
 package
 pinch
 quart
+quarts
 clove
 stalk
 drop
 bottle
+gill
+unit
 
