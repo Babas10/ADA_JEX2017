@@ -80,25 +80,26 @@ def fun_unit_corrector(string):
     dict_conver = {'teaspoon' : 5,'tablespoon' :15, 'oz': 30,'cup': 237,'pint' : 474,'quart':946, 'gallon': 3785,'dl' :100,'pound' :453,'ounce' :29,'g' : 1,'kg': 1000,  \
         'l': 1000, 'ml': 1,'mg':1,'bottle':750,'drop':0.05,'pinch':0.36,'jar':1000,'can':330,'unit':'u','gill':118}
 
-    teaspoon = ['teaspoon','tsp','t','teaspoon']
-    tablespoon = ['tablespoon' ,'T', 'tbl', 'tbs','tbsp']
+    teaspoon = ['teaspoon','tsp','tsps','t','teaspoon']
+    tablespoon = ['tablespoon' ,'T', 'tbl','tbls', 'tbs','tbsp']
     oz = ['oz', 'fl', 'fluid ounce']
     cup = ['cup', 'c']
-    pint =  ['pint','p', 'pt', 'fl pt']
+    pint =  ['pint','p', 'pt','pts', 'fl pt']
     quart =  ['quart','q', 'qt','fl qt']
-    gallon =  ['gallon', 'gal']
+    gallon =  ['gallon', 'gal','gals']
     ml = ['ml', 'milliliter', 'millilitre', 'cc','mL']
     l = ['l', 'liter', 'litre', 'L']
     dl = ['dl','deciliter','decilitre','dL']
-    pound = ['pound','lb']
+    pound = ['pound','lb','lbs']
     ounce = ['ounce','oz']
     mg = ['mg','milligram','milligramme']
     kg = ['kg', 'kilogramme','kilogram']
-    g = ['g','gram']
+    g = ['g','gram','gramme']
     unit = ['unit','stalk','package']
     other_indic=['bottle','pinch','jar','can','drop','gill']
 
     unit_list = [teaspoon, tablespoon, oz, cup, pint, pint, quart, gallon, ml, l, dl, pound, ounce, mg, kg, g]
+
 
     #if (len(splited_string) == 1 and splited_string[0] == ''):
     #    return ''
