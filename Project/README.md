@@ -1,74 +1,76 @@
-# Title: Perception of Health
-
+# Title : The food symphony
 
 # Abstract
-## A 150 word description of the project idea, goals, dataset used. What story you would like to tell and why? What's the motivation behind your project?
-Our goal is to extract information about healthy pattern in a dataset. More precisely we would like to find articles with health related subject, rate their importance and get more specific information. For example, we could then plot a health impact in term of different discrete "problems": fast food, gluten, etc.. by region and by period if possible.
-Secondly, we would like to see if new problem have appeared and other disappeared or have been solved. It would be possible to analyse this by finding sudden increase/decrease in frequency of specific terms.
+
+Have you ever wondered while cooking whether these ingredients could be great together ? A good example is certainly the Hawaiian pizza, which mixes, original pizza ingredients like tomato, ham and mozzarella, with pineapple, an exotic ingredient.
+
+Thus, using the big dataset gathering cooking recipes all around the world, our project's goal is to extract the combination of ingredients and try to find an interconnection between them.
+First of all, will be to extract the essence of each ingredient in a recipe and then analyze what the ingredient bring in the recipe (sweet, spicy, ...). The second step, will be to find correlation between recipes in order to map which combinations of different ingredients blend the best together to give tasteful meals. Finally, we imagine an interface where users will give as input a series of ingredients and constraints, i.e. (vegan, with meat, with fish, etc.) and a recipe will be suggested to them. From there we can use machine learning to create new recipes from what we have learned. Theoretically, this mechanism will consider all ingredients seen in the learning phase, thus new unknown mixtures of ingredients can emerge giving rise to the best combination ever (hopefully).
 
 Story:
 
-Health is a key factor that follows us along through life. Through the different era of mankind, the perception of health has evolved and reached very precise subject on how we should behave to avoid diseases instead of simply curing them. Furthermore with the evolution of technologies and the expansion of the knowledge through the internet, people became much more concerned. In consequences, new theories, lobbies and trends, appeared in society, changing definitively the way of life and the link with health. We will by analysing web news of different countries try to perceive the changes of the meaning of the word "health" and try to identify which are the key factor related to those changes.
+We believe that ingredients in a recipe are like harmonies in music, separated they are pleasant to hear, but when perfectly combined harmonies can come up with something special (Schubert' Symphonies).
+Therefore, we are convinced that some of the best combinations are still waiting to be found. Indeed, best chef in the world always tries when making a creation, to have all ingredients in osmosis. What if the best combination is a fish from Tahiti, a spice from Tierra del Fuego, some exotic vegetable from Vietnam and olive oil from Italy. How would be able to produce it?
 
-Our motivations are to be able to predict the impact of health-related "problems" in a country and its propagation in another country (related to question 1), and to be able to realise how our perception of healthy has evolved? (In an extreme example, if a country passes from developing to developed should it stop using gluten cause all of a sudden it will be a capital health matter?)
-
-
-
-
+Motivation: We are three students that enjoy cooking and eating, however, as students, it's not always easy to take the time to check for a recipe, look at the ingredients we already have and what we are missing. Also, it's not easy to have new ideas or to know whether what are left in our fridges could be cooked together.  Thus, we believe this project suit us well. We have the opportunity to work on a subject that we enjoy and to create something new that may help other people to improve all the cooking process.
 
 
 # Research questions
-## A list of research questions you would like to address during the project.
 
-- Are some problems appearing / disappearing in some parts of the world before other?
-- What are important health issues of the 21st century?
-- Impact of different behaviour/habits on health?
-- Importance of Malnutrition, undernourishment or overconsumption of food in society?
+1. Are common ingredients (like meats, rice or pasta) essential for a good meal ? Or whether exotic ingredients make it special ?
+
+2. What is the essence of each ingredient and what do they bring in a recipe ?
+
+3. What are the characteristics of popular recipes ?
+
+4. What kind of correlation between ingredient will be the best to find the harmony in a recipe ?
+
+5. What are the process of the best chef in the world to find new recipes ? And could we apply this to our project ?
+
+6. What should we implement in our interface to make it interactive and friendly using ?
+
+7. The cooking process does have a great importance in the preparation of the meal. We will need to find a workaround. 
 
 # Dataset
-## List the dataset(s) you want to use, and some ideas on how do you expect to get, manage, process and enrich it/them. Show us you've read the docs and some examples, and you've a clear idea on what to expect. Discuss data size and format if relevant.
 
-New on the web, contains downloadable, full-text corpus data set from ( NOW, Wikipedia, COCA, COHA, GloWbE) that are in English and the Corpus del Español data set. From the English data set there are two of them that contains 20 English speaking countries. In order to have a quick overview of the available data, we check how many times some key words "Intolerance", "Gluten", "Health" appear in 3 data sets.
+To achieve our goals, we will use Cooking recipes dataset, where we can get the list of ingredients turn into ingredients bag of words in order to group them into categories and characterize their essence and their role in the recipe. Therefore, we will be able to determine the correlation by the number of occurrences and their role.
 
-| Data Set | Countries | # Health | # Gluten | # Intolerant |
-|:---------|:----------|:---------|:---------|:-------------|
-| NOW      | 20        | 605000   | 8331     | 5116         |
-| COCA     | 1         | 183000   | 661      | 816          |
-| COHA     | 1         | 43000    | 200      | 1230         |
-
-
-By adding the 3 others data set we think we will have enough material to make an analysis of the trends and its propagation. It will be possible for us to go further in the trend propagation by analysing how the health issues cross the barrier of language by including the Spanish dataset.
-The data set are provided in 3 different ways i.e as a raw data set, words/lemma, or linear text.
-The words/lemma/Pos will allow to search for various types of the word health more easily. The three corpus are available for download, we will then choose which one to use (more likely words/lemma) for a specific purpose. We will be able to directly search in that database through python.
-
-Other possible data set: 200 years of News. It could give us an other information perspective as new will be more localised but can be a strength whether our project wants to identify the questions on country scale.
-
+Besides ,the characteristics of each ingredients such as the total amount of calories and the calories by group, i.e. fat, protein, sugar, as well as the sodium and cholesterol content will be extracted to enrich our work. On one side, we will try to add the chef process in order to find new recipes and on the other side, we will try to make the distinction with common ingredients and exotic ingredients.
 
 
 # A list of internal milestones up until project milestone 2
-## Add here a sketch of your planning for the next project milestone.
+
 The project milestone should contain a notebook with data collection and descriptive analysis.
 
 Week #1 :
-- Agree on the dataset and what information to extract
+- Agree on the dataset and what information to extract.
 - Discuss with the TA about our work plan.
 - Find function to handle text extraction (only important words, without articles words such as the, a, for ...)
 
 Week #2 :
 - Data collection
-- Find correlation to answer the questions
+- Group ingredients into categories
+- Characterize the essence and role of each ingredients
+- Start to find correlation between them
+- Work on possible combinations
 
 Week #3 :
-- Work on a possible data story
+- Come up with a solution to measure the harmony of our recipes
+- Start to work on the learning phase
+- Work on chef's process to find new recipes
+- Work on our data story
 - Work on the descriptive analysis
+
 Week #4
-- Finalise the notebook
+- Finalize the notebook
 - Structured and informed plan for the next milestones.
 - Start to work on our data story or report
 - Start to discuss about the presentation for the poster
 
 # Questions for TAa
-Add here some questions you have for us, in general or project-specific.
-- The wikipedia corpus is also present on the site. Will we be allowed to use it?
 
-- We will need powerful tools of natural language processing to analyse the meaning of the articles. Is it doable?
+- It would be usefull to also have the number of calories, satured fat etc in each ingredients. Can we use an external documentation for that? Or can we infer it from the data using machine learning?
+
+- We really want to do something interactive, Would you have any recommendations (website or interface on computer) ?
+
+- We will need powerful tools of natural language processing and machine learning to extract ingredients and come up with new combinations. Is it doable?
