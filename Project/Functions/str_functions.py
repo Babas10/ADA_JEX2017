@@ -145,7 +145,7 @@ def fun_extract_ingredients(one_receipe,ingredients_list,techniques_list,units_l
         #keep only the root of the word
         check = [lemmatizer.lemmatize(token) for token in elem_list]
         #split str of string with stuck digit : '2cups': '2','cups'
-        check=sum([re.findall(r'[A-Za-z]+|[\d.]+', x) for x in check],[])
+        check=sum([re.findall(r'[A-Za-z]+|[\d./]+', x) for x in check],[])
         techniques=[]
         units=[]
         one_ingr=None
