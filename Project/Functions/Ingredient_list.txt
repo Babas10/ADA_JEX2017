@@ -1,12 +1,12 @@
 acidulated water
 ackee
 acorn squash
-aduki beans
+aduki bean
 egg liqueur
 agar-agar
 ale
 aleppo pepper
-alfalfa sprouts
+alfalfa sprout
 allspice
 almond
 almond essence
@@ -17,7 +17,7 @@ amaretti
 anchovy
 anchovy essence
 angelica
-bitters
+bitter
 anise
 apple
 apple chutney
@@ -37,11 +37,11 @@ avocado
 bacon
 bagel
 baguette
-baked beans
-cakes and baking
+baked bean
+cake and baking
 baking powder
 balsamic vinegar
-bamboo shoots
+bamboo shoot
 banana
 banana bread
 barbary duck
@@ -49,7 +49,7 @@ barbecue sauce
 barley
 basil
 basmati rice
-bay boletes
+bay bolete
 bay leaf
 bean
 beansprouts
@@ -58,7 +58,7 @@ beef
 beef consomme
 beef dripping
 beef mince
-beef ribs
+beef rib
 beef rump
 beef sausage
 beef stock
@@ -66,20 +66,20 @@ beef tomato
 beer
 beetroot
 berry
-betel leaves
+betel leaf
 beurre manie
 bicarbonate of soda
-bilberries
-birds-eye chillies
+bilberry
+birds-eye chilli
 biscotti
 biscuit
 blachan
-black beans
+black bean
 black bream
 black eyed bean
 black pepper
 black pudding
-black sesame seeds
+black sesame seed
 black treacle
 blackbean sauce
 blackberry
@@ -99,21 +99,21 @@ bramley apple
 bran
 brandy
 brandy butter
-brandy snaps
+brandy snap
 bratwurst
 brazil nut
 bread
 bread roll
 bread sauce
-breadcrumbs
+breadcrumb
 breadfruit
-breadsticks
+breadstick
 bresaola
 brie cheese
 brill
 brioche
 beef brisket
-broad beans
+broad bean
 broccoli
 broth
 brown bread
@@ -122,7 +122,7 @@ brown rice
 brown sauce
 shrimp
 brown sugar
-brussels sprouts
+brussels sprout
 buckwheat
 buckwheat flour
 bulgur wheat
@@ -142,12 +142,12 @@ calvados
 camembert cheese
 campagne loaf
 candied peel
-cannellini beans
-cape gooseberries
-capers
+cannellini bean
+cape gooseberry
+caper
 capsicum
 caramel
-caraway seeds
+caraway seed
 cardamom
 carob
 carrageen moss
@@ -166,13 +166,13 @@ cavolo nero
 cayenne pepper
 celeriac
 celery
-celery seeds
+celery seed
 champ
 champagne
-chanterelle mushrooms
+chanterelle mushroom
 chantilly cream
 chapati flour
-chapatis
+chapati
 charcuterie
 chard
 charlotte potato
@@ -182,7 +182,7 @@ cheese
 cheese sauce
 cherry
 cherry brandy
-cherry tomatoes
+cherry tomato
 chervil
 cheshire cheese
 chestnut
@@ -205,20 +205,20 @@ chilli paste
 chilli powder
 chilli sauce
 chinese cabbage
-chinese mushrooms
+chinese mushroom
 chinese pancake
 chipotle
-chips
-chives
+chip
+chive
 chocolate
 chocolate biscuit
-chocolate brownies
+chocolate brownie
 chocolate cake
 chocolate mousse
 chocolate truffle
-chopped tomatoes
+chopped tomato
 chorizo
-choux pastry
+chou pastry
 christmas cake
 christmas pudding
 beef chuck and blade
@@ -228,14 +228,14 @@ ciabatta
 cider
 cinnamon
 citrus fruit
-clams
+clam
 clarified butter
 clementine
 clotted cream
-cloves
+clove
 cobnut
-cockles
-cocktails
+cockle
+cocktail
 cocoa butter
 cocoa
 coconut
@@ -246,9 +246,9 @@ coconut oil
 cod
 cod roe
 coffee
-coffee beans
+coffee bean
 coffee essence
-coffee granules
+coffee granule
 coffee liqueur
 cognac
 cola
@@ -260,12 +260,12 @@ comte cheese
 condensed milk
 coriander
 coriander cress
-coriander seeds
+coriander seed
 corn oil
 corn syrup
 corned beef
 cornflour
-cos lettuce
+co lettuce
 cottage cheese
 coulis
 courgette
@@ -273,7 +273,7 @@ court bouillon
 couscous
 crab
 crab apple
-crackers
+cracker
 cranberry
 cranberry juice
 cranberry sauce
@@ -288,10 +288,10 @@ creme fraiche
 crepe
 cress
 crispbread
-crisps
+crisp
 croissant
 crostini
-croutons
+crouton
 crudites
 crumble
 crystallised ginger
@@ -305,7 +305,7 @@ curly kale
 currant bread
 currant
 curry
-curry leaves
+curry leaf
 curry paste
 curry powder
 custard
@@ -314,7 +314,7 @@ cuttlefish
 dab
 daikon
 dal
-damsons
+damson
 dandelion
 danish blue
 dark chocolate
@@ -326,14 +326,14 @@ desiree potato
 digestive biscuit
 dijon mustard
 dill
-dim sum wrappers
+dim sum wrapper
 dolcelatte cheese
 double cream
 double gloucester
 dover sole
 dragon fruit
 dried apricot
-dried cherries
+dried cherry
 dried chilli
 dried fruit
 dried mixed fruit
@@ -342,7 +342,7 @@ duck
 duck confit
 duck fat
 dulce de leche
-dumplings
+dumpling
 duxelles
 edam
 eel
@@ -350,7 +350,7 @@ egg
 egg wash
 egg white
 egg yolk
-elderberries
+elderberry
 elderflower
 emmental cheese
 english muffin
@@ -362,7 +362,7 @@ falafel
 farfalle
 fat
 fennel
-fennel seeds
+fennel seed
 fenugreek
 feta cheese
 fettuccine
@@ -376,9 +376,9 @@ fish sauce
 fish soup
 five-spice powder
 flageolet bean
-flaked almonds
+flaked almond
 beef flank
-flapjacks
+flapjack
 flatbread
 flatfish
 fleur de sel
@@ -389,7 +389,7 @@ flying fish
 focaccia
 foie gras
 fondant icing
-fondant potatoes
+fondant potato
 fontina cheese
 food colouring
 forced rhubarb
@@ -398,7 +398,7 @@ fragrant rice
 frangipane
 frankfurter
 freekeh
-french beans
+french bean
 french bread
 french dressing
 coriander fresh
@@ -421,19 +421,19 @@ garlic bread
 gelatine
 ghee
 gherkin
-giblets
+giblet
 gin
 ginger
 ginger ale
 ginger beer
 ginger biscuit
 gingerbread
-glace cherries
+glace cherry
 globe artichoke
 glucose
 gnocchi
-goats cheese
-goats milk
+goat cheese
+goat milk
 golden syrup
 goose
 goose fat
@@ -445,7 +445,7 @@ gram flour
 grape juice
 grapefruit
 grapefruit juice
-grapes
+grape
 grapeseed oil
 gratin
 gravy
@@ -455,9 +455,9 @@ green bean
 green cabbage
 green lentil
 green tea
-greengages
+greengage
 grey mullet
-ground almonds
+ground almond
 ginger ground
 grouse
 gruyere cheese
@@ -465,7 +465,7 @@ guacamole
 guava
 guinea fowl
 gurnard
-habanero chillies
+habanero chilli
 haddock
 haggis
 hake
@@ -492,9 +492,9 @@ honey
 honeycomb
 horseradish
 horseradish sauce
-hot cross buns
+hot cross bun
 hummus
-hunza apricots
+hunza apricot
 hyssop
 ice cream
 iceberg lettuce
@@ -507,11 +507,11 @@ january king cabbage
 japanese pumpkin
 jelly
 jerk seasoning
-jersey royal potatoes
+jersey royal potato
 jerusalem artichoke
 john dory
 jujube
-juniper berries
+juniper berry
 jus
 kabana
 kale
@@ -543,7 +543,7 @@ langoustine
 lard
 lardons
 lasagne
-lasagne sheets
+lasagne sheet
 laverbread
 leek
 leftover turkey
@@ -555,12 +555,12 @@ lemon juice
 lemon sole
 lemonade
 lemongrass
-lentils
+lentil
 lettuce
 lime
 lime cordial
 lime juice
-lime leaves
+lime leaf
 lime pickle
 ling
 lingonberry
@@ -574,9 +574,9 @@ lobster
 loganberry
 long-grain rice
 lovage
-low-calorie sweeteners
+low-calorie sweetener
 lychee
-macadamia nuts
+macadamia nut
 macaroni
 macaroon
 mace
@@ -599,7 +599,7 @@ margarine
 marjoram
 marmalade
 marrow
-marrowfat peas
+marrowfat pea
 marsala wine
 marshmallow
 marzipan
@@ -608,10 +608,10 @@ mashed potato
 matzo
 mayonnaise
 meat
-medlars
+medlar
 megrim
 melon
-melon seeds
+melon seed
 meringue
 mesclun
 milk
@@ -620,47 +620,47 @@ milkshake
 millet
 millet flour
 mince
-mince pies
+mince pie
 mincemeat
 mint
 mint sauce
 mirepoix
 mirin
 miso
-mixed berries
-mixed dried beans
+mixed berry
+mixed dried bean
 mixed fish
-mixed nuts
+mixed nut
 mixed spice
-mixed spices
+mixed spice
 molasses
-monks beard
+monk beard
 monkfish
 morel
 mortadella
 mozzarella cheese
 muesli
-muffins
-mulberries
+muffin
+mulberry
 mulled wine
 mung bean
 mushroom
 mussel
 mustard
 mustard cress
-mustard leaves
+mustard leaf
 mustard oil
 mustard powder
-mustard seeds
+mustard seed
 mutton
 naan bread
-nachos
+nacho
 nashi
 nasturtium
 nectarine
-nettles
-new potatoes
-nibbed almonds
+nettle
+new potato
+nibbed almond
 noodle soup
 noodle
 nori
@@ -669,7 +669,7 @@ nut
 nutmeg
 oatcake
 oatmeal
-oats
+oat
 octopus
 offal
 oil
@@ -693,7 +693,7 @@ palm oil
 palm sugar
 pancake
 pancetta
-pandan leaves
+pandan leaf
 paneer
 panettone
 papaya
@@ -713,7 +713,7 @@ pastry
 pasty
 pate
 paw-paw
-pea shoots
+pea shoot
 peach
 peanut butter
 peanut oil
@@ -737,9 +737,9 @@ piccalilli
 pickle
 pickled onion
 pie
-pig cheeks
+pig cheek
 pigeon
-pigeon peas
+pigeon pea
 pike
 pine nut
 pineapple
@@ -763,7 +763,7 @@ pomegranate juice
 pomegranate molasses
 pomelo
 popcorn
-poppy seeds
+poppy seed
 porcini
 pork
 pork belly
@@ -772,21 +772,21 @@ pork fillet
 pork leg
 pork loin
 pork mince
-pork sausages
+pork sausage
 pork shoulder
 pork spare rib
 port
-portobello mushrooms
+portobello mushroom
 potato
 potato rosti
-potato wedges
+potato wedge
 poultry
 poussin
 praline
 prawn
-prawn crackers
-preserved lemons
-preserves
+prawn cracker
+preserved lemon
+preserve
 prosciutto
 prune
 prune juice
@@ -798,9 +798,9 @@ pumpernickel bread
 pumpkin
 pumpkin seed
 purple sprouting broccoli
-puy lentils
+puy lentil
 quail
-quails egg
+quail egg
 quark
 quatre-epices
 quince
@@ -811,13 +811,13 @@ radicchio
 radish
 rainbow chard
 rainbow trout
-raisins
+raisin
 raita
 rapeseed oil
 ras-el-hanout
 raspberry
 raspberry jam
-ratafia biscuits
+ratafia biscuit
 ratatouille
 red cabbage
 red leicester cheese
@@ -847,9 +847,9 @@ roast beef
 roast chicken
 roast lamb
 roast pork
-roast potatoes
+roast potato
 roast turkey
-roasted vegetables
+roasted vegetable
 rock salmon
 rock salt
 rocket
@@ -872,7 +872,7 @@ saffron
 sage
 salad
 salad cream
-salad leaves
+salad leaf
 salami
 salmon
 salsa
@@ -891,7 +891,7 @@ sausage
 savory
 savoy cabbage
 scallop
-scotch bonnet chillies
+scotch bonnet chilli
 scrag
 sea bass
 sea bream
@@ -905,7 +905,7 @@ self-raising flour
 semolina
 serrano ham
 sesame oil
-sesame seeds
+sesame seed
 seville orange
 shallot
 sharon fruit
@@ -930,7 +930,7 @@ smoked mackerel
 smoked salmon
 smoked trout
 snapper
-soba noodles
+soba noodle
 soda
 soda bread
 sole
@@ -951,11 +951,11 @@ spelt
 spelt flour
 spice
 spinach
-split peas
+split pea
 sponge cake
-spring greens
+spring green
 spring onion
-spring roll wrappers
+spring roll wrapper
 squash
 squid
 star anise
@@ -975,8 +975,8 @@ stuffing
 sucralose
 suet
 sugar
-sugar-snap peas
-sultanas
+sugar-snap pea
+sultana
 sumac
 summer cabbage
 summer fruit
@@ -1057,11 +1057,11 @@ venison
 verjus
 vermicelli
 vermouth
-vine leaves
+vine leaf
 vinegar
 vodka
 vodka cocktail
-waffles
+waffle
 walnut
 walnut oil
 wasabi
@@ -1069,7 +1069,7 @@ water chestnut
 watercress
 watermelon
 waxy potato
-webbs lettuce
+webb lettuce
 wensleydale cheese
 wheatgerm
 whelk
@@ -1096,10 +1096,10 @@ wild garlic
 wild mushroom
 wild rice
 wine
-winkles
+winkle
 wood pigeon
 worcestershire sauce
-wraps
+wrap
 yam
 yeast
 yellow lentil
@@ -1108,11 +1108,11 @@ yuzu
 zander
 zest
 alfafa
-almonds
-apricots
-beans
+almond
+apricot
+bean
 bechamel
-berries
+berry
 brie
 camembert
 chanterelle
@@ -1121,12 +1121,12 @@ citrus
 corn
 emmental
 kiwi
-lemons
+lemon
 mozzarella
-mushrooms
+mushroom
 parmesan
-peas
-potatoes
+pea
+potato
 ricotta
 roquefort
 sausage

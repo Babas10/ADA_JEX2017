@@ -10,6 +10,7 @@ from nltk.corpus import brown
 import requests
 from bs4 import BeautifulSoup
 import string
+from nltk.stem import WordNetLemmatizer
 
 
 #Allow to find verbs in a tokenize word
@@ -88,6 +89,11 @@ def fun_ingredients_list(path):
     'soy','soya','eggplant','tortilla','zucchini','yogurt','jalapeno','cilantro','chili powder','pecan','arugula',\
     'whiskey','cornstarch','cornmeal','pecan','feta','endive','cereal','sesame','chile paste','bulgur','amaretto','chili',\
     'pepperoncini','gruyere','agave','cayenne']
+    lemmatizer = WordNetLemmatizer()
+    ingredient_list=[' '.join([lemmatizer.lemmatize(x).lower() for x in token.split(' ')]) for token in ingredient_list]
+
+
+
     with open(path+'ingredient_list.txt', 'w') as f:
         for s in ingredient_list:
             f.write(s + '\n')

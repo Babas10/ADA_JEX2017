@@ -78,7 +78,7 @@ def fun_unit_corrector(string):
     newUnit = ""
     splited_string = string.split(' ')
     dict_conver = {'teaspoon' : 5,'tablespoon' :15, 'oz': 30,'cup': 237,'pint' : 474,'quart':946, 'gallon': 3785,'dl' :100,'pound' :453,'ounce' :29,'g' : 1,'kg': 1000,  \
-        'l': 1000, 'ml': 1,'mg':1,'bottle':750,'drop':0.05,'pinch':0.36,'jar':1000,'can':330,'unit':'u','gill':118}
+        'l': 1000, 'ml': 1,'mg':1,'bottle':750,'drop':0.05,'pinch':0.36,'jar':1000,'can':330,'gill':118}
 
     teaspoon = ['teaspoon','tsp','tsps','t','teaspoon']
     tablespoon = ['tablespoon' ,'T', 'tbl','tbls', 'tbs','tbsp']
@@ -95,14 +95,12 @@ def fun_unit_corrector(string):
     mg = ['mg','milligram','milligramme']
     kg = ['kg', 'kilogramme','kilogram']
     g = ['g','gram','gramme']
-    unit = ['unit','stalk','package']
+    #unit = ['unit','stalk','package']
     other_indic=['bottle','pinch','jar','can','drop','gill']
 
     unit_list = [teaspoon, tablespoon, oz, cup, pint, pint, quart, gallon, ml, l, dl, pound, ounce, mg, kg, g]
 
 
-    #if (len(splited_string) == 1 and splited_string[0] == ''):
-    #    return ''
 
     for lists in unit_list:
         for i,x in enumerate(splited_string):
@@ -113,13 +111,17 @@ def fun_unit_corrector(string):
             if x in other_indic:
                 gram_value = float(dict_conver[x]) * fun_covert_to_float(splited_string[abs(i-1)])
                 return gram_value
-            if x in unit:
-                return splited_string[abs(i-1)]+' u'
+            else:
+                try:
+                    return float(fun_covert_to_float(splited_string[0]))*float(fun_covert_to_float(splited_string[1]))
+                except ValueError:
+                    continue
+
 
     return 0
 
 
-def fun_extract_ingredients(one_receipe,ingredients_list,techniques_list,units_list,to_gram=True):
+def fun_extract_ingredients(one_receipe,ingredients_list,techniques_list,units_list,ingred_unit,to_gram=True):
     ''' Function extractiing all ingredients, quantities and possiblity technics of cooking
 
     '''
@@ -146,6 +148,7 @@ def fun_extract_ingredients(one_receipe,ingredients_list,techniques_list,units_l
         check = [lemmatizer.lemmatize(token) for token in elem_list]
         #split str of string with stuck digit : '2cups': '2','cups'
         check=sum([re.findall(r'[A-Za-z]+|[\d./]+', x) for x in check],[])
+
         techniques=[]
         units=[]
         one_ingr=None
@@ -160,26 +163,34 @@ def fun_extract_ingredients(one_receipe,ingredients_list,techniques_list,units_l
             elif bool(re.search(r'\d',word)) and (no_number):#check if it belongs to our unit list or is alphanumeric
                 units.append(word)
                 no_number=False
-            elif (word in units_list) and (no_unit):
+            elif (word in units_list )and (word not in ['unit','stalk','package']) and (no_unit):
                 units.append(word)
                 no_unit=False
         for biword in nltk.bigrams(check): # check if we have a biword ingredient
             if ' '.join(biword) in ingredients_list:
                 one_ingr=' '.join(biword)
+
+
         if one_ingr==None :      # check if we have no ingredient : avoid this element of recipe
             wasted_number=wasted_number+1
             wasted_ingr.append(' '.join(check))
             continue
-        if(len(' '.join(units))==0):  # fill with a special unit if we are dealing with no quantity
+        if(len(' '.join(units))==0) and (one_ingr in ingred_unit):  # fill with a special unit if we are dealing with no quantity
             units.append('1')
-            units.append('unit')
-        elif no_unit:
-            units.append('unit')
+            units.append(str(ingred_unit[one_ingr]))
+        elif(len(' '.join(units))==0):  # fill with a special unit if we are dealing with no quantity
+            units.append('1')
+            units.append('200')
+        elif no_unit and (one_ingr in ingred_unit):
+            units.append(str(ingred_unit[one_ingr]))
+
+        elif no_unit :
+            units.append('200')
+
         elif no_number:
             units.append('1')
 
-
-        units=' '.join(units)
+        units=' '.join((units))
         if to_gram:
             units=fun_unit_corrector(units)
 
