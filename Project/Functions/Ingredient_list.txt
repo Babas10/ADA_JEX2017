@@ -1047,6 +1047,7 @@ vanilla essence
 vanilla extract
 vanilla pod
 veal
+vegetable bouillon
 vegetable curry
 vegetable oil
 vegetable shortening

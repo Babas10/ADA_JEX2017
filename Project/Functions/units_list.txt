@@ -11,6 +11,7 @@ tbsp
 fluid ounce
 fl 
 oz
+ozs
 cup
 c
 pint
@@ -49,6 +50,8 @@ milligram
 milligramme
 g
 gram
+gms
+grams
 gramme
 kg
 kgs
@@ -65,5 +68,3 @@ stalk
 drop
 bottle
 gill
-unit
-

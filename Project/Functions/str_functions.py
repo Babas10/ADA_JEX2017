@@ -82,7 +82,7 @@ def fun_unit_corrector(string):
 
     teaspoon = ['teaspoon','tsp','tsps','t','teaspoon']
     tablespoon = ['tablespoon' ,'T', 'tbl','tbls', 'tbs','tbsp']
-    oz = ['oz', 'fl', 'fluid ounce']
+    oz = ['oz','ozs','fl', 'fluid ounce']
     cup = ['cup', 'c']
     pint =  ['pint','p', 'pt','pts', 'fl pt']
     quart =  ['quart','q', 'qt','fl qt']
@@ -91,10 +91,10 @@ def fun_unit_corrector(string):
     l = ['l', 'liter', 'litre', 'L']
     dl = ['dl','deciliter','decilitre','dL']
     pound = ['pound','lb','lbs']
-    ounce = ['ounce','oz']
+    ounce = ['ounce']
     mg = ['mg','milligram','milligramme']
     kg = ['kg', 'kilogramme','kilogram']
-    g = ['g','gram','gramme']
+    g = ['g','gram','grams','gms','gramme']
     #unit = ['unit','stalk','package']
     other_indic=['bottle','pinch','jar','can','drop','gill']
 
@@ -180,12 +180,12 @@ def fun_extract_ingredients(one_receipe,ingredients_list,techniques_list,units_l
             units.append(str(ingred_unit[one_ingr]))
         elif(len(' '.join(units))==0):  # fill with a special unit if we are dealing with no quantity
             units.append('1')
-            units.append('200')
+            units.append('200')   # could be deleted
         elif no_unit and (one_ingr in ingred_unit):
             units.append(str(ingred_unit[one_ingr]))
 
         elif no_unit :
-            units.append('200')
+            units.append('200')  # could be deleted
 
         elif no_number:
             units.append('1')

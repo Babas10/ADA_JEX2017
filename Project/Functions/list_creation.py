@@ -88,7 +88,7 @@ def fun_ingredients_list(path):
     'parmesan','peas','potatoes','ricotta', 'roquefort','sausage','shiitake','water','vanilla','vacherin','tuna',\
     'soy','soya','eggplant','tortilla','zucchini','yogurt','jalapeno','cilantro','chili powder','pecan','arugula',\
     'whiskey','cornstarch','cornmeal','pecan','feta','endive','cereal','sesame','chile paste','bulgur','amaretto','chili',\
-    'pepperoncini','gruyere','agave','cayenne']
+    'pepperoncini','gruyere','agave','cayenne','vegetable bouillon']
     lemmatizer = WordNetLemmatizer()
     ingredient_list=[' '.join([lemmatizer.lemmatize(x).lower() for x in token.split(' ')]) for token in ingredient_list]
 
