@@ -1,4 +1,4 @@
-# Title : The food symphony
+# Title : Food symphony
 
 # Abstract
 
@@ -17,60 +17,27 @@ Motivation: We are three students that enjoy cooking and eating, however, as stu
 
 # Research questions
 
-1. Are common ingredients (like meats, rice or pasta) essential for a good meal ? Or whether exotic ingredients make it special ?
+1. What is the essence of each ingredient and what do they bring in a recipe ?
 
-2. What is the essence of each ingredient and what do they bring in a recipe ?
+2. What kind of correlation between ingredient will be the best to find the harmony in a recipe ?
 
-3. What are the characteristics of popular recipes ?
-
-4. What kind of correlation between ingredient will be the best to find the harmony in a recipe ?
-
-5. What are the process of the best chef in the world to find new recipes ? And could we apply this to our project ?
-
-6. What should we implement in our interface to make it interactive and friendly using ?
-
-7. The cooking process does have a great importance in the preparation of the meal. We will need to find a workaround. 
+3. What should we implement in our interface to make it interactive and friendly using ?
 
 # Dataset
 
 To achieve our goals, we will use Cooking recipes dataset, where we can get the list of ingredients turn into ingredients bag of words in order to group them into categories and characterize their essence and their role in the recipe. Therefore, we will be able to determine the correlation by the number of occurrences and their role.
 
-Besides ,the characteristics of each ingredients such as the total amount of calories and the calories by group, i.e. fat, protein, sugar, as well as the sodium and cholesterol content will be extracted to enrich our work. On one side, we will try to add the chef process in order to find new recipes and on the other side, we will try to make the distinction with common ingredients and exotic ingredients.
+Besides ,the characteristics of each ingredients such as the total amount of calories and the calories by group, i.e. fat, protein, sugar, as well as the sodium and cholesterol content will be extracted to enrich our work.
 
+# Results
+For each recipe, ingredients, quantities and techniques were extracted from the dataset. From that, the user can select one ingredient with its quantity and eventually a nutrition constraint and our algorithm makes a special recipe and also show existing recipes. The creation of recipes was done by using the co occurrence matrix of ingredients and  by applying the k-NN regression on it, to find proximity within the ingredients. The quantities of each ingredient in the new recipe were calculated using the ratio of the mean of each ingredient according to 1 serving.
 
-# A list of internal milestones up until project milestone 2
+<img src="Structure.jpeg" width=900>
 
-The project milestone should contain a notebook with data collection and descriptive analysis.
+Our objective was achieved, however, we believe we will not be able to create the best food symphony as the majority of the recipes are European, and from USA. To create the best food symphony one need recipes from all around the word to find unsuspected association of ingredients.
 
-Week #1 :
-- Agree on the dataset and what information to extract.
-- Discuss with the TA about our work plan.
-- Find function to handle text extraction (only important words, without articles words such as the, a, for ...)
+# Member Contributions
 
-Week #2 :
-- Data collection
-- Group ingredients into categories
-- Characterize the essence and role of each ingredients
-- Start to find correlation between them
-- Work on possible combinations
-
-Week #3 :
-- Come up with a solution to measure the harmony of our recipes
-- Start to work on the learning phase
-- Work on chef's process to find new recipes
-- Work on our data story
-- Work on the descriptive analysis
-
-Week #4
-- Finalize the notebook
-- Structured and informed plan for the next milestones.
-- Start to work on our data story or report
-- Start to discuss about the presentation for the poster
-
-# Questions for TAa
-
-- It would be usefull to also have the number of calories, satured fat etc in each ingredients. Can we use an external documentation for that? Or can we infer it from the data using machine learning?
-
-- We really want to do something interactive, Would you have any recommendations (website or interface on computer) ?
-
-- We will need powerful tools of natural language processing and machine learning to extract ingredients and come up with new combinations. Is it doable?
+Etienne Dubois : Quantity serving webscrapping, preprocess functions, quantities & techniques for special recipes
+Tom Suter : Filters designer, Unit value webscrapping, Outliers, Linear Regression for nutrient informations
+Jonathan Chansin : Ingredient list webscrapping, Special recipes code, data analysis plots.
