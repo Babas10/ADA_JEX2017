@@ -32,7 +32,7 @@ Besides ,the characteristics of each ingredients such as the total amount of cal
 # Results
 For each recipe, ingredients, quantities and techniques were extracted from the dataset. From that, the user can select one ingredient with its quantity and eventually a nutrition constraint and our algorithm makes a special recipe and also show existing recipes. The creation of recipes was done by using the co occurrence matrix of ingredients and  by applying the k-NN regression on it, to find proximity within the ingredients. The quantities of each ingredient in the new recipe were calculated using the ratio of the mean of each ingredient according to 1 serving.
 
-<img src="Structure.jpeg" width=900>
+<img src="1.png" width=900>
 
 Our objective was achieved, however, we believe we will not be able to create the best food symphony as the majority of the recipes are European, and from USA. To create the best food symphony one need recipes from all around the word to find unsuspected association of ingredients.
 
